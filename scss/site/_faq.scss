@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* FAQ
+-----------------------------*/
+
+.faq {
+  background: $bk-odd;
+
+  .faq__inner {
+    @include width-base;
+    padding-bottom: 90px
+  }
+  
+  .faq__title {
+    @include aside-title;
+  }
+
+  .faq__list {
+
+    .--q {
+      margin: 25px 0 0 0.8em;
+      padding: 0 0 8px 5px;
+      border-bottom: 1px solid $gray;
+      @include font-medium;
+      letter-spacing: 0.1em;
+    }
+
+    .--a {
+      margin-left: 1.5em;
+      padding-top: 10px;
+      @include font-base;
+    }
+  }
+
+  @media screen and (max-width: 720px) { 
+
+    .faq__list {
+
+      .--q {
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+
+/*---------------------------------
+  font-size
+---------------------------------*/
+
+$font-strong: 90px;
+
+@mixin font-base {
+  font-size: 16px;
+
+  @media screen and (max-width: 720px) { 
+    font-size: 14px;
+  }
+}
+
+@mixin font-title {
+  font-size: 42px;
+
+  @media screen and (max-width: 720px) { 
+    font-size: 28px;
+  }
+}
+
+@mixin font-small {
+  font-size: 18px;
+
+  @media screen and (max-width: 720px) { 
+    font-size: 14px;
+  }
+}
+
+@mixin font-medium {
+  font-size: 24px;
+
+  @media screen and (max-width: 720px) { 
+    font-size: 18px;
+  }
+}
+
+
+/*---------------------------------
+  web fonts
+---------------------------------*/
+
+@font-face {
+  font-family: "SpicaNeue";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SpicaNeue-Light.woff2") format('woff2'),
+  url("../fonts/SpicaNeue-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpicaNeue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SpicaNeue-Regular.woff2") format('woff2'),
+  url("../fonts/SpicaNeue-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpicaNeue";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SpicaNeue-Bold.woff2") format('woff2'),
+  url("../fonts/SpicaNeue-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpicaNeueP";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SpicaNeueP-Light.woff2") format('woff2'),
+  url("../fonts/SpicaNeueP-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpicaNeueP";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SpicaNeueP-Regular.woff2") format('woff2'),
+  url("../fonts/SpicaNeueP-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpicaNeueP";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SpicaNeueP-Bold.woff2") format('woff2'),
+  url("../fonts/SpicaNeueP-Bold.woff") format('woff');
+}

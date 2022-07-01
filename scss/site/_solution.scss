@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* こんな悩みを解決してきました!
+-----------------------------*/
+
+.solution {
+  position: relative;
+  background: $bk-even;
+
+  .solution__title {
+    @include section-title;
+  }
+
+  .solution__bk {
+    position: absolute;
+    bottom: -3%;
+    right: 60%;
+    z-index: 0;
+
+    img {
+      height: auto;
+    }
+  }
+
+  .solution__inner {
+    overflow: hidden;
+    @include width-base;
+    padding-bottom: 45px;
+  }
+
+  .solution__list {
+    position: relative;
+    z-index: 1;
+    width: 505px;
+    float: right;
+    margin-top: 28px;
+
+    .solution__list__item {
+      margin-top: 40px;
+
+      .--company {
+        display: inline-block;
+        padding: 4px 17px;
+        background: $white;
+        color: $black;
+      }
+
+      .--trouble {
+        margin: 10px 0;
+        letter-spacing: 0.08em;
+      }
+
+      .--achievement {
+        font-size: 20px;
+        color: $orange;
+
+        &:last-of-type {
+
+          .--strong {
+            margin-top: 5px;
+          }
+        }
+
+        .--strong {
+          display: inline-block;
+          font-size: 28px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) { 
+
+    .solution__bk {
+      position: relative;
+      top: 30px;
+      left: 0;
+
+      img {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+
+    .solution__inner {
+      margin-top: 60px;
+    }
+
+    .solution__title {
+      padding-top: 0;
+    }
+
+    .solution__list {
+      width: 100%;
+      margin-top: 0;
+      text-align: center;
+
+      .solution__list__item {
+
+        .--achievement {
+          font-size: 14px;
+
+          .--strong {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}

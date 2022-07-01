@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* TEL
+-----------------------------*/
+
+.address {
+  position: relative;
+  padding: 45px 15px 30px;
+  text-align: center;
+
+  .address__inner {
+    @include width-base;
+  }
+
+  .address__logo {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .address__about {
+    display: inline-flex;
+    margin-top: 5px;
+    color: #969696;
+    letter-spacing: 0;
+  }
+
+  .address__list {
+    display: grid;
+    margin: 5px auto 0;
+
+    .address__list__inner {
+      margin: 0 auto;
+    }
+
+    &:nth-of-type(1) {
+      .--define {
+        margin-top: 10px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .--define {
+        margin-top: 2px;
+      }
+    }
+
+    .--define {
+      float: left;
+      margin-right: 10px;
+      padding: 5px 15px;
+      border: 1px solid $gray;
+      background: #323232;
+      color: $gray;
+    }
+
+    .--description {
+      float: left;
+
+      &.-tel {
+        font-size: 40px;
+        letter-spacing: -0.02em;
+      }
+
+      &.-fax {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .address__about--description {
+    margin-left: 5px;
+  }
+
+  @media screen and (max-width: 720px) {
+    padding: 45px 15px 5px;
+
+    .address__inner {
+      padding-bottom: 10px;
+    }
+
+    .address__list {
+
+      &:nth-of-type(1) {
+        .--define {
+          margin-top: 0;
+        }
+      }
+
+      .--description {
+
+        &.-tel {
+          font-size: 26px;
+        }
+
+        &.-fax {
+          margin-top: 4px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .address__about {
+      margin-top: 10px;
+    }
+  }
+  
+}

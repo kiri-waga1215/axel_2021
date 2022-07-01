@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 私たちの一番の強みは
+   一気通貫型のご提案です。
+-----------------------------*/
+
+.work {
+  position: relative;
+  background: $bk-odd;
+
+  .work__title {
+    position: absolute;
+    top: -22px;
+    font-size: 32px;
+  }
+
+  .work__subtitle {
+    @include section-title;
+  }
+
+  .work__inner {
+    @include width-base;
+    padding: 0 0 80px;
+  }
+
+  .work__about {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .work__list {
+    margin-top: 73px;
+
+    .work__list__inner {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .work__list__item {
+     
+      .work__list__item__wrap {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-column-gap: 30px;
+        @include flex-center;
+      }
+
+      .--performance {
+        font-size: $font-strong;
+        color: $orange;
+
+        .-span {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .work__list__about {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+
+    .work__title {
+      position: initial;
+      padding-top: 100px;
+      font-weight: 600;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .work__list {
+
+      .work__list__inner {
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .work__list__item {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+
+        dl {
+          margin-left: -15px;
+        }
+
+        .--title {
+          font-size: 16px;
+        }
+
+        .--performance {
+          font-size: 70px;
+          letter-spacing: -0.01em;
+
+          .-span {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .work__list__about {
+        line-height: 1.6;
+      }
+    }
+  }
+}

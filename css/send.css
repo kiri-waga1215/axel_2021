@@ -1,0 +1,22 @@
+.sending{
+  display: none;
+}
+
+#form__err{
+  width:68.9655172414vw;
+  max-width:1000px;
+  margin:auto;
+  padding:1.4em;
+  background:#f1becd;
+  border:3px solid rgba(216,5,35,.2);
+  text-align:center;
+  font-size:1.2413793103vw;
+  font-weight:700;
+  color:#d80523
+}
+
+.err{
+  font-weight: 700;
+  color:#d80523;
+  background-color: #f1becd;
+}

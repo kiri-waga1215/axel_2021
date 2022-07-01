@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*---------------------------------
+  layout
+---------------------------------*/
+
+@mixin width-base {
+  max-width: 1030px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 720px) { 
+    max-width: 515px;
+    padding: 0 12px 50px;
+  }
+}
+
+@mixin flex-center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+}
+
+@mixin grid-center {
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+}
+
+@media screen and (min-width: 721px) { 
+
+  .sp-show {
+    display: none !important;
+  }
+
+  .sp-none {
+    display: inline-block !important;
+  }
+}
+
+@media screen and (max-width: 720px) { 
+
+  .sp-show {
+    display: inline-block !important;
+  }
+
+  .sp-none {
+    display: none !important;
+  }
+}

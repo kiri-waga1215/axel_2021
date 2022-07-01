@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <g id="グループ_673" data-name="グループ 673" transform="translate(-511 -3438)">
+    <circle id="楕円形_1" data-name="楕円形 1" cx="54" cy="54" r="54" transform="translate(511 3438)" fill="#fff"/>
+    <g id="グループ_537" data-name="グループ 537" transform="translate(-3381.668 1899.264)">
+      <path id="パス_3910" data-name="パス 3910" d="M3967.8,1600.126v25.543h-48.136v-60.933H3967.8v21.509" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <g id="グループ_535" data-name="グループ 535" transform="translate(3930.833 1576.922)">
+        <line id="線_14" data-name="線 14" x2="25.806" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="線_15" data-name="線 15" x2="25.806" transform="translate(0 12.187)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="線_16" data-name="線 16" x2="21.65" transform="translate(0 24.373)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="線_17" data-name="線 17" x2="21.253" transform="translate(0 36.56)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+      <g id="グループ_536" data-name="グループ 536" transform="translate(3947.622 1571.101)">
+        <rect id="長方形_91" data-name="長方形 91" width="9.28" height="43.307" transform="translate(35.485 0) rotate(45)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <line id="線_18" data-name="線 18" x2="6.562" y2="6.562" transform="translate(30.563 4.921)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <path id="パス_3911" data-name="パス 3911" d="M4016.154,1703.831l11.424-4.862-6.562-6.562Z" transform="translate(-4016.154 -1661.784)" fill="none" stroke="#2e2d2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

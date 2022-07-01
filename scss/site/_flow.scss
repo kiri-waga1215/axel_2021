@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*---------------------------------
+  FLOW / D2C事業スタートまでの流れ
+---------------------------------*/
+
+.flow {
+  background: $bk-even;
+
+  .flow__inner {
+    @include width-base;
+    max-width: 1060px;
+    padding-bottom: 60px
+  }
+
+  .flow__title {
+    @include section-title;
+  }
+
+  .flow__list {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 80px;
+
+    .flow__list__item {
+      margin-top: 30px;
+      text-align: center;
+
+      .--head {
+        @include font-medium;
+
+        .--number {
+          display: block;
+          margin-bottom: 10px;
+          font-size: 62px;
+          font-weight: 300;
+          color: $orange;
+        }
+
+      }
+
+      .--about {
+        margin-top: 10px;
+        line-height: 1.6em;
+        letter-spacing: 0;
+        color: $gray;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) { 
+
+    .flow__list {
+      display: block;
+      margin-top: 0;
+
+      .flow__list__item {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 15px;
+        margin-top: 15px;
+
+        .--img {
+          position: relative;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          
+          img {
+            width: 80%;
+          }
+        }
+
+        .--about {
+          color: $white;
+        }
+
+        .--head {
+          display: table;
+
+          .--number {
+            display: block;
+            float: left;
+            margin-bottom: 0;
+            font-size: 62px;
+          }
+
+          .--title {
+            display: table-cell;
+            padding-left: 25px;
+            vertical-align: middle;
+          }
+  
+        }
+
+        .--about {
+          margin-top: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

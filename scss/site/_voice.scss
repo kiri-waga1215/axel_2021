@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* User Voice / 協働企業様の声
+-----------------------------*/
+
+.voice {
+  background: $bk-odd;
+
+  .voice__inner {
+    @include width-base;
+    padding-bottom: 60px;
+  }
+
+  .voice__title {
+    @include section-title;
+  }
+
+  .voice__about {
+    margin-top: 13px;
+    text-align: center;
+  }
+
+  .voice__list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 15px;
+    @include grid-center;
+    margin: 40px 15px 0;
+
+    .voice__list__item {
+
+      .--logo {
+        min-height: 100px;
+        text-align: center;
+        @include flex-center;
+      }
+
+      .--company {
+        margin-top: 20px;
+        @include font-medium;
+        text-align: center;
+      }
+
+      .--voice {
+        display: grid;
+        align-content: center;
+        min-height: 3em;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .--subvoice {
+        margin-top: 15px;
+        line-height: 1.6em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+
+    .voice__list {
+      display: block;
+
+      .voice__list__item {
+
+        &:nth-of-type(2) {
+          margin-top: 35px;
+        }
+
+        .--logo {
+          min-height: auto;
+        }
+
+        .--subvoice {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
